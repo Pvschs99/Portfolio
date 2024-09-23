@@ -1,0 +1,26 @@
+{% extends 'home.html' %}
+
+{% block content %}
+<section class="section">
+    <div class="section_container">
+        <div class="content">
+            <p class="subtitle">Hello</p>
+            <h1 class="title">
+                I'm <span><br>a</span> Web Developer
+            </h1>
+            <p class="description">
+                Welcome to my full-stack developer portfolio! I'm Venkata Satya Chandra Shekar, a dedicated developer with a passion for creating responsive and user-friendly websites. I have experience working on a diverse range of projects, from personal to dynamic applications.
+
+
+            </p>
+            <div class="action_btns">
+                <button class="hire_me" href="{{ url_for('skills') }}">Hire me</button>
+                <button class="portfolio" href="{{ url_for('contactinfo') }}">Portfolio</button>
+            </div>
+        </div>
+        <div class="image">
+            <img src="{{ url_for('static', filename='images/shekar.jpg') }}" alt="shekar">
+        </div>
+    </div>
+</section>
+{% endblock %}

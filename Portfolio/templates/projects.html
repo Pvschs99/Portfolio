@@ -1,0 +1,37 @@
+{% extends 'home.html' %}
+
+{% block content %}
+<div class="projects-container">
+    <h1>Projects</h1>
+    <div class="projects">
+        <div class="project-card">
+            <img src="{{ url_for('static', filename='images/health.jpg') }}" alt="Health Prediction Using Machine Learning">
+            <div class="project-content">
+                <h2>Health Prediction Using Machine Learning</h2>
+                <p>
+                    Machine learning (ML) is used in healthcare for various applications, including disease prediction, patient care, and community services:
+                    - Predicting critical problems like strokes, heart attacks, and sepsis
+                    - Detecting and diagnosing disorders
+                    - Predicting cardiovascular risks
+                    - Detecting diabetic retinopathy and cancerous tumors
+                </p>
+                <div class="project-links">
+                    <a href="https://github.com/Pvschs99/Hackton_kiet" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="{{ url_for('static', filename='images/email.jpg') }}" alt="Email ID Generation">
+            <div class="project-content">
+                <h2>Email ID Generation</h2>
+                <p>
+                    Developed an Email Application designed to automate the creation of email IDs for students, faculty, and staff. The app generates secure email addresses and manages user-specific configurations efficiently.
+                </p>
+                <div class="project-links">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

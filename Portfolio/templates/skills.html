@@ -1,0 +1,35 @@
+{% extends 'home.html' %}
+
+{% block content %}
+<section class="skills-section">
+    <h2>Skills</h2>
+    <div class="skills-content">
+        <h3>Programming Languages:</h3>
+        <p>Python, Java, C#</p>
+
+        <h3>Web Technologies:</h3>
+        <p>HTML, CSS, Flask</p>
+
+        <h3>Software Development:</h3>
+        <p>Familiar with Software Development Life Cycle (SDLC) and testing components like Selenium.</p>
+
+        <h3>Databases:</h3>
+        <p>MySQL</p>
+
+        <h3>Soft Skills:</h3>
+        <ul>
+            <li>Innovative Thinking</li>
+            <li>Team Management</li>
+            <li>Leadership</li>
+            <li>Communication Skills</li>
+            <li>Problem Solving Skills</li>
+            <li>Analytical Skills</li>
+            <li>Quick Learner</li>
+        </ul>
+    </div>
+
+    <div class="resume-download">
+        <a href="{{ url_for('static', filename='P.v.s.Chandrashekar.pdf') }}" class="btn-download">Download Resume</a>
+    </div>
+</section>
+{% endblock %}
